@@ -1,0 +1,72 @@
+// Online C++ compiler to run C++ program online
+// SGPA calcualtor for semester 1
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    // Write C++ code here
+    
+    int grade_point_for_sub_1;
+    int grade_point_for_sub_2;
+    int grade_point_for_sub_3;
+    int grade_point_for_sub_4;
+    int grade_point_for_sub_5;
+    
+    
+    int grade_point_for_lab1;
+    int grade_point_for_lab2;
+    cout<<"Enter grade point for sub 1"<<endl;
+    cin>>grade_point_for_sub_1;
+    
+    cout<<"Enter grade point for sub 2"<<endl;
+    cin>>grade_point_for_sub_2;
+    
+    
+    cout<<"Enter grade point for sub 3"<<endl;
+    cin>>grade_point_for_sub_3;
+    
+    cout<<"Enter grade point for sub 4"<<endl;
+    cin>>grade_point_for_sub_4;
+    
+    cout<<"Enter grade point for sub 5"<<endl;
+    cin>>grade_point_for_sub_5;
+    
+    
+    
+    cout<<"Enter grade point for lab subject1 "<<endl;
+    cin>>grade_point_for_lab1;
+    
+    cout<<"Enter grade point for lab subject2"<<endl;
+    cin>>grade_point_for_lab2;
+    
+    
+    
+    // calcuation work
+    
+    int total_subject_marks = (grade_point_for_sub_1 * 4)  + (grade_point_for_sub_2 * 4)  + (grade_point_for_sub_3 * 4)  + (grade_point_for_sub_4 * 4) + (grade_point_for_sub_5 * 4); 
+    cout<<total_subject_marks<<endl;
+    int total_lab_marks = (grade_point_for_lab1 * 8) + (grade_point_for_lab2 * 2);
+    
+    int total_credit = 30;
+    
+    cout<<total_lab_marks<<endl;
+    int total_of_all = total_subject_marks + total_lab_marks;
+    cout<<total_of_all<<endl;
+    
+    
+    int conversion_to_double  = float(total_of_all);
+    
+    
+    float total_sub = conversion_to_double; 
+    
+    double sgpa = total_sub/30;
+    
+    //final output
+    
+    cout << fixed << setprecision(1) << "SGPA IS "<<sgpa;
+
+    
+    
+    
+    return 0;
+}
