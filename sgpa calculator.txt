@@ -18,6 +18,11 @@ int main() {
     int grade_point_for_lab2;
 
 
+    int  total_subject_marks = 0; 
+    int  total_lab_marks = 0;
+    int total_credit = 0;
+    int total_of_all = 0;
+
 // input and output data
     cout<<"Enter grade point for sub 1"<<endl;
     cin>>grade_point_for_sub_1;
@@ -47,14 +52,14 @@ int main() {
     
     // calculating the different grade points and finding the total of it
     
-    int total_subject_marks = (grade_point_for_sub_1 * 4)  + (grade_point_for_sub_2 * 4)  + (grade_point_for_sub_3 * 4)  + (grade_point_for_sub_4 * 4) + (grade_point_for_sub_5 * 4); 
+     total_subject_marks = (grade_point_for_sub_1 * 4)  + (grade_point_for_sub_2 * 4)  + (grade_point_for_sub_3 * 4)  + (grade_point_for_sub_4 * 4) + (grade_point_for_sub_5 * 4); 
     cout<<total_subject_marks<<endl;
-    int total_lab_marks = (grade_point_for_lab1 * 8) + (grade_point_for_lab2 * 2);
+     total_lab_marks = (grade_point_for_lab1 * 8) + (grade_point_for_lab2 * 2);
     
-    int total_credit = 30;
+     total_credit = 30;
     
     cout<<total_lab_marks<<endl;
-    int total_of_all = total_subject_marks + total_lab_marks;
+     total_of_all = total_subject_marks + total_lab_marks;
     cout<<total_of_all<<endl;
     
     
