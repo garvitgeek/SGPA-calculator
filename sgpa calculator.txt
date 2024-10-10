@@ -8,7 +8,7 @@ int main() {
 //declaration for variables
     
     int grade_point_for_sub_1;
-    int grade_point_for_sub_2;0
+    int grade_point_for_sub_2;
     int grade_point_for_sub_3;
     int grade_point_for_sub_4;
     int grade_point_for_sub_5;
@@ -70,7 +70,8 @@ int main() {
     
     double sgpa = total_sub/30;
     
-    //final output
+    //final output using set preicision function
+    //to limit the number after decimal points.
     
     cout << fixed << setprecision(1) << "SGPA IS "<<sgpa;
 
