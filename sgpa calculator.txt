@@ -4,10 +4,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    // Write C++ code here
+
+//declaration for variables
     
     int grade_point_for_sub_1;
-    int grade_point_for_sub_2;
+    int grade_point_for_sub_2;0
     int grade_point_for_sub_3;
     int grade_point_for_sub_4;
     int grade_point_for_sub_5;
@@ -15,6 +16,9 @@ int main() {
     
     int grade_point_for_lab1;
     int grade_point_for_lab2;
+
+
+// input and output data
     cout<<"Enter grade point for sub 1"<<endl;
     cin>>grade_point_for_sub_1;
     
@@ -41,7 +45,7 @@ int main() {
     
     
     
-    // calcuation work
+    // calculating the different grade points and finding the total of it
     
     int total_subject_marks = (grade_point_for_sub_1 * 4)  + (grade_point_for_sub_2 * 4)  + (grade_point_for_sub_3 * 4)  + (grade_point_for_sub_4 * 4) + (grade_point_for_sub_5 * 4); 
     cout<<total_subject_marks<<endl;
